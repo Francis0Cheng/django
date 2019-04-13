@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1> About page </h1>
+    <p>this is a template</p>
+    <p>
+    {% for item in my_list %}
+        {{ item|add:1  }}
+    {% endfor %}
+    {{ my_html|safe}}
+    </p>
+{% endblock %}
+
